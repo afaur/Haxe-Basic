@@ -53,3 +53,7 @@ The `./clean` bash script will clean out the build directory.
 
 Try changing the build target by using the other options found at:
 - http://haxe.org/documentation/introduction/compiler-usage.html
+
+# Running tests
+
+Right now there is only one test but it can be run using: `./check`
