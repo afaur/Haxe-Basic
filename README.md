@@ -32,13 +32,22 @@ Here is an example:
 haxelib setup /Users/username/haxelib
 ```
 
-After that you should be able to `git clone` this project and then run: `./compile`
-`compile` is just a bash script that runs `haxe build.hxml`
-For more information on `build.hxml` look here: 
-- http://old.haxe.org/doc/compiler
+# Download dependencies
 
-The `build.hxml` file tells the compiler to find the source files inside `src`
-then to create a `Main.swf` file in the `build` directory.
+This is so we can run our tests.
+```
+haxelib install buddy
+```
+
+After that you should be able to `git clone` this project and then run: `./compile`
+---
+> `compile` is just a bash script that runs `haxe build.hxml`
+> For more information on `build.hxml` look here: 
+> - http://old.haxe.org/doc/compiler
+
+The `build.hxml` file tells the compiler to:
+- Find the source files inside `src`
+- Create a `Main.swf` file in the `build` directory.
 
 The `./clean` bash script will clean out the build directory.
 

@@ -1,3 +1,5 @@
+package basic.util;
+
 class Point
 {
 	public var x : Int;
@@ -12,6 +14,10 @@ class Point
 			" X: ", x,
 			" Y: ", y
 		);
+	}
+
+	public function getCoords() {
+		return "" + this.x + "," + this.y;
 	}
 }
 
